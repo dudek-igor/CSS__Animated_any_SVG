@@ -62,9 +62,9 @@ h2 {
   stroke-dashoffset: 0;
 }
 .container .icon.basketball:hover path {
-  animation: animate-heart 2s linear forwards;
+  animation: animate-basketball 2s linear forwards;
 }
-@keyframes animate-heart {
+@keyframes animate-basketball {
   0% {
     stroke-dashoffset: 0;
   }
