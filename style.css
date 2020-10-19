@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #06181f;
+}
+h2 {
+  color: #31e8ff;
+}
+.container {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .icon {
+  width: 200px;
+}
+.container .icon path {
+  fill: transparent;
+  stroke-width: 0.3;
+  stroke: #31e8ff;
+}
+.container .icon.heart path {
+  stroke-dasharray: 65;
+  stroke-dashoffset: 0;
+}
+.container .icon.heart:hover path {
+  animation: animate-heart 2s linear forwards;
+}
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dashoffset: -65;
+  }
+  80% {
+    stroke-dashoffset: -130;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: -130;
+    fill: #31e8ff;
+  }
+}
